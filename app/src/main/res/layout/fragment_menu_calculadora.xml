@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    tools:context=".MenuCalculadoraFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="MENU CALCULADORA FISICA"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        />
+    <Button
+        android:id="@+id/btn_menu_MCU"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:text="MCU / MCUA"
+        android:textSize="21sp"
+        />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_menu_SegleyFR"
+        android:layout_alignTop="@+id/btn_menu_MCU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="SEGUNDA LEY (Friccion)"
+        android:textSize="21sp"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_menu_SegleyNoFR"
+        android:layout_alignTop="@+id/btn_menu_SegleyFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="SEGUNDA LEY (SIN FRICCION)"
+        android:textSize="21sp"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_menu_PlanoInclinado"
+        android:layout_alignTop="@+id/btn_menu_SegleyNoFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="PLANO INCLINADO"
+        android:textSize="21sp"
+
+    />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_menu_LeyesGravedad"
+        android:layout_alignTop="@+id/btn_menu_PlanoInclinado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="LEYES DE GRAVEDAD"
+        android:textSize="21sp"
+
+        />
+
+
+</RelativeLayout>

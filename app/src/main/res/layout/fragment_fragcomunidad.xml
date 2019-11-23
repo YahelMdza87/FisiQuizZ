@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    tools:context=".fragcomunidad">
+
+    <TextView
+        android:id="@+id/txtv_tit_comunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Hola, Bienvenido!"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="34sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtv_desc_comunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_alignTop="@+id/txtv_tit_comunidad"
+        android:layout_marginTop="70dp"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:text="Bienvenido al area de comunidad, en esta area si te registras como profesor tendras el acceso a herramientas hechas para ellos basicamnete, y si entras como alumno disfrutaras de lo que haga el profesor"
+        />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtv_record_comunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtv_desc_comunidad"
+
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_ini_comunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_record_comunidad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Entrar"
+        android:textSize="15sp"
+        />
+
+
+</RelativeLayout>

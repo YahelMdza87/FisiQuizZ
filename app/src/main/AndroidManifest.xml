@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fisiquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Crear_contrarreloj"></activity>
+        <activity android:name=".Crear_Quiz" />
+        <activity android:name=".Crear_Examenes" />
+        <activity android:name=".Friccion" />
+        <activity android:name=".Tleyesgravedad" />
+        <activity android:name=".Tsegundaley" />
+        <activity android:name=".Tmcua" />
+        <activity android:name=".Tmcu" />
+        <activity android:name=".MCU" />
+        <activity android:name=".MCU2" />
+        <activity android:name=".leygravedad2" />
+        <activity android:name=".leygravedad" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".PlanoInclinadoActivity" />
+        <activity android:name=".ContrarrelojActivity" />
+        <activity android:name=".pantallacarga">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crear_Examenes">
+    <TextView
+        android:id="@+id/txtv_tit_crear_examenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliga su tipo de examen"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="215dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtv_tit_crear_examenes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrarreloj"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/btn_crear_contrarreloj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Crear Examen"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="215dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtv_tit_crear_examenes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="211dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btn_crear_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Crear Examen"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

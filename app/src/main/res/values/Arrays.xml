@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="strPlanos">
+        <item>Plano inclinado de bajada</item>
+        <item>Plano inclinado de subida</item>
+        <item>Selecciona el tipo de plano (OBLIGATORIO)</item>
+    </string-array>
+</resources>

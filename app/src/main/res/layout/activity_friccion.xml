@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#110000"
+    android:layout_height="match_parent"
+    tools:context=".Friccion"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda Ley de Newton en la Tierra"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtFuerza"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Fuerza Aplicada (FA)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+
+            android:id="@+id/cbF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtAcele"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Aceleracion (a)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbA"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+
+
+        <RadioGroup
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtMasa"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Masa (M)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+
+        <EditText
+            android:id="@+id/edtMU"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:ems="10"
+            android:hint="µ"
+            android:inputType="numberDecimal"
+            android:textSize="16sp" />
+
+        <CheckBox
+
+            android:id="@+id/cbMU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtFY"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint='Fuerza en "Y" (FY)'
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbFY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light" />
+
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtW"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Peso (W)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/fy"
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFYN"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFYKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtFX"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint='Fuerza en "X" (FX)'
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbFX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edtFricc"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Fricción (Fr)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbFr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/fx"
+            android:layout_width="189dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFXN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFXKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFrN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFrKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:id="@+id/edtAng"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="Angulo (Θ)"
+            android:inputType="numberDecimal"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCalcularFuerza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="Calcular"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_friccion_regresar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:text="Regresar al menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

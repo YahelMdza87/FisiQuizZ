@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crear_contrarreloj">
+    <TextView
+        android:id="@+id/txtv_tit_crear_contrarreloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREA UN CONTRARRELOJ"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/txtv_crear_contrarreloj_nombre_examen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_tit_crear_contrarreloj"
+        android:text="Nombre del examen:"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/etx_nombre_contrarreloj"
+        android:hint="Sin espacios, si gusta usar (_)"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_crear_contrarreloj_nombre_examen"
+        />
+    <TextView
+        android:id="@+id/txtv_pregunta_contrarreloj_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta"
+        android:layout_below="@+id/etx_nombre_contrarreloj"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+
+        android:id="@+id/etx_pregunta_contrarreloj"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtv_pregunta_contrarreloj_crear"
+        />
+
+    <TextView
+        android:id="@+id/txtv_opcion_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcion 1"
+        android:layout_below="@+id/etx_pregunta_contrarreloj"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/etx_opcion_1"
+        android:layout_width="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_opcion_1"
+        android:hint="Primera opcion"
+        />
+    <TextView
+    android:id="@+id/txtv_opcion_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Opcion 2"
+    android:layout_below="@+id/etx_opcion_1"
+    android:layout_marginTop="5dp"
+    android:textSize="20dp"
+    />
+    <EditText
+        android:id="@+id/etx_opcion_2"
+        android:layout_width="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_opcion_2"
+        android:hint="Segunda opcion"
+        />
+    <TextView
+        android:id="@+id/txtv_opcion_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcion 3"
+        android:layout_below="@+id/etx_opcion_2"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/etx_opcion_3"
+        android:layout_width="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_opcion_3"
+        android:hint="Segunda opcion"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtv_respuesta_correcta_contrarreloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etx_opcion_3"
+        android:text="Respuesta Correcta"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/etx_respuesta_correcta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtv_respuesta_correcta_contrarreloj"
+        android:layout_below="@+id/etx_opcion_3"
+        android:layout_marginLeft="200dp"
+        android:hint="1,2,3"
+        />
+    <TextView
+        android:id="@+id/txtv_cantidad_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv_respuesta_correcta_contrarreloj"
+        android:layout_marginTop="5dp"
+        android:text="Cantidad de tiempo"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:hint="En segundos"
+        android:id="@+id/etx_cantidad_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etx_respuesta_correcta"
+        android:layout_alignLeft="@id/txtv_cantidad_tiempo"
+        android:layout_marginLeft="200dp" />
+    <Button
+        android:id="@+id/btn_finalizar_contrarreloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Finalizar contrarreloj"
+        />
+
+    <Button
+        android:id="@+id/btn_agregar_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv_cantidad_tiempo"
+        android:layout_marginTop="5dp"
+        android:text="Agregar Pregunta"
+        />
+
+
+</RelativeLayout>

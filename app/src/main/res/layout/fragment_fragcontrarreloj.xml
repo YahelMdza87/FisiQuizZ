@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    android:padding="16dp"
+    tools:context="com.example.fisiquiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtv_descripcion"
+        android:layout_marginBottom="20dp"
+        android:text="¿Estas listo?"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/txtv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/txtv_max_acertadas"
+        android:textColor="@android:color/white"
+        android:text="Bienvenido al area de quiz, en esta seccion te pondremos problemas y preguntas de teoria a ver que tal andas en fisica, intenta responder antes de que se acabe el tiempo, mucha suerte y exito."
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/txtv_max_acertadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/btn_ini"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Comenzar" />
+    <Button
+        android:id="@+id/btn_crear_examen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@+id/btn_ini"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

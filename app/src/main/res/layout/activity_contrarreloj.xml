@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    android:padding="16dp"
+    tools:context="com.example.fisiquiz.ContrarrelojActivity">
+
+    <TextView
+        android:id="@+id/txtv_acertadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acertadas: 0"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtv_cant_preguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv_acertadas"
+        android:text="Pregunta: 1/x"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtv_cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="00:30"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txtv_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_marginBottom="100dp"
+        android:text="Aqui va la pregunta\nAqui va la pregunta\nAqui va la pregunta"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/rad_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"
+            android:checked="false"
+            android:text="Opcion 1"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rad_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcion 2"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rad_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcion 3"
+            android:textColor="@android:color/white"/>
+
+    </RadioGroup>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar" />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Regresar"/>
+
+</RelativeLayout>

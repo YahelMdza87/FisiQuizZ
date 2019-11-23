@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    tools:context=".fragteoria">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtv_teoriaTit"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMAS DE FISICA"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btn_tmcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/txtv_teoriaTit"
+        android:layout_centerHorizontal="true"
+        android:text="MCU"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_tmcua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btn_tmcu"
+        android:layout_centerHorizontal="true"
+        android:text="MCUA"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_tsegundaL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btn_tmcua"
+        android:layout_centerHorizontal="true"
+        android:text="Segunda Ley"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_tleyesgravedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btn_tsegundaL"
+        android:layout_centerHorizontal="true"
+        android:text="LEYES DE GRAVEDAD"
+        />
+
+</RelativeLayout>

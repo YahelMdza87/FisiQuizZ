@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110000"
+    tools:context=".PlanoInclinadoActivity"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plano inclinado"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#110000"
+            android:backgroundTint="#110000"
+            android:visibility="visible"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtFuerz"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Fuerza Aplicada (FA)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+
+        <EditText
+            android:id="@+id/edtAcel"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Aceleracion (a)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFAN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFAKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtMasaPI"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Masa (M)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+
+        <EditText
+            android:id="@+id/edtMUU"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="µ"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbMU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtWY"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint='Peso en "Y" (WY)'
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbWY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtW"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Peso (W)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/cbW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWYN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWYKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtWX"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint='Peso en "X" (WX)'
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbWX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtFriccion"
+            android:layout_width="152dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Fricción (Fr)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+        <CheckBox
+
+            android:id="@+id/cbFr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/background_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="192dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWXN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbWXKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFrN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Newtons" />
+
+            <RadioButton
+                android:textColor="#FFFFFF"
+                android:buttonTint="@android:color/background_light"
+                android:id="@+id/rbFrKgf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kgf" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="#FFFFFF"
+            android:id="@+id/edtAng"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Angulo (Θ)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCalcularFuerz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
+            android:text="Calcular"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_plano_regresar"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:text="Regresar al menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#110000"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+    <TextView
+        android:id="@+id/txtv_cant_preguntas_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Pregunta 1 / x"
+        android:layout_below="@+id/txtv_acertadas_quiz"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtv_acertadas_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correctas: 0"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/txtv_pregunta_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="AQUI VA LA PREGUNTA \n AQUI VA LA PREGUNTA \n AQUI VA LA PREGUNTA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etx_respuesta"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:singleLine="false"
+
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_siguiente_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etx_respuesta"
+        android:layout_marginLeft="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="SIGUIENTE"
+        />
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btnsalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Salir"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#110000"
+    android:layout_height="match_parent"
+    tools:context=".leygravedad">
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtm2"
+        android:layout_width="69dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Masa 2"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey2" />
+
+    <TextView
+        android:id="@+id/txvG2"
+
+        android:layout_width="83dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="(6.67x10¯¹¹)("
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey2" />
+
+    <TextView
+
+        android:id="@+id/txvLey"
+        android:layout_width="162dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Ley de gravedad"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvFG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="12dp"
+        android:text="g=(G)(mt)/(d)² = "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey" />
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:id="@+id/txvG"
+        android:layout_width="136dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="(6.67x10¯¹¹)(6x10²⁴) /"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/txvFG"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey" />
+
+    <TextView
+
+        android:id="@+id/textView5"
+        android:layout_width="6dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="("
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvG" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="6dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="("
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo2" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtD"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Distancia"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txvG" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtf"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Distancia"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo2" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtD2"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint=" Distancia 2"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txvG" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtf2"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Distancia 2"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="10dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="48dp"
+        android:text=")²"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtD2"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="10dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:text=")²"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtf2"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo3" />
+
+    <TextView
+        android:id="@+id/txvResulg"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo" />
+
+    <TextView
+        android:id="@+id/txvResulf"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo4" />
+
+    <RadioGroup
+        android:id="@+id/radiogrupo"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtD">
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="M"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnKm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Km"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btnCalcularg"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:text="Calcular"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radiogrupo"
+        app:layout_constraintTop_toBottomOf="@+id/edtD" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btnCalcularf"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:text="Calcular"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="9dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="12dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtD"
+        app:layout_constraintTop_toBottomOf="@+id/txvG" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="9dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtf"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrupo2" />
+
+    <TextView
+        android:id="@+id/txvLey2"
+        android:layout_width="133dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:text="F=(G)(m1)(m2)/(d)²="
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvResulg" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/edtm1"
+        android:layout_width="69dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Masa 1"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txvG2"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=")("
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtm1"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey2" />
+
+    <TextView
+
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=")/"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edtm2"
+        app:layout_constraintTop_toBottomOf="@+id/txvLey2" />
+
+    <RadioGroup
+        android:id="@+id/radiogrupo2"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtm1">
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtn6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="6x10²⁴"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnnormal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Otro valor"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogrupo3"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/radiogrupo2"
+        app:layout_constraintTop_toBottomOf="@+id/edtm1">
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtn62"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="6x10²⁴"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnnormal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Otro valor"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogrupo4"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtf2">
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnM2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="M"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:buttonTint="@android:color/background_light"
+            android:id="@+id/rbtnKm2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Km"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvResulf"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:id="@+id/btnFormulas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Mas formulas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvResulf"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
