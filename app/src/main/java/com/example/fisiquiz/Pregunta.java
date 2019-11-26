@@ -60,6 +60,7 @@ public class Pregunta {
     public void setCantidad_Tiempo(int cantidad_Tiempo) {
         this.cantidad_Tiempo = cantidad_Tiempo;
     }
+    //
 
     public int getNum_aciertos() {
         return Num_aciertos;

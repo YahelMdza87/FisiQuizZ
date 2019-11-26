@@ -23,7 +23,6 @@ public class fragcomunidad extends Fragment {
         btnComunidad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), )
             }
         });
                 vista = inflater.inflate(R.layout.fragment_fragcomunidad, container, false);
