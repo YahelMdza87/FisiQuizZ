@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "146752536454",
+    "firebase_url": "https://fisiquizz.firebaseio.com",
+    "project_id": "fisiquizz",
+    "storage_bucket": "fisiquizz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146752536454:android:958d467c65bcc07111b607",
+        "android_client_info": {
+          "package_name": "com.example.fisiquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146752536454-sva8cvv5qcf0h3m9rnnji8pm0vt40p2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fisiquiz",
+            "certificate_hash": "f76e675c1dcd514915f0ab681c945fd2b674c569"
+          }
+        },
+        {
+          "client_id": "146752536454-tl4rs8ttk1npdhr4jm2hqu95emcpn0kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHACqqWeOBPt_woA4R395eorrH0Aq5lnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146752536454-tl4rs8ttk1npdhr4jm2hqu95emcpn0kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

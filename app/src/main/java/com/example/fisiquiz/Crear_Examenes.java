@@ -1,10 +1,11 @@
 package com.example.fisiquiz;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Crear_Examenes extends AppCompatActivity {
     Button btn_crear_quiz,btn_crear_contrarreloj;
