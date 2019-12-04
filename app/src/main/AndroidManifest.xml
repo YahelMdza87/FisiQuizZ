@@ -10,8 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ListaActivity"></activity>
+        <activity android:name=".curso" />
+        <activity android:name=".RegistrarActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity_profe" />
         <activity android:name=".Crear_contrarreloj" />
         <activity android:name=".Crear_Quiz" />
         <activity android:name=".Crear_Examenes" />

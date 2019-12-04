@@ -15,7 +15,7 @@ public class pantallacarga extends Activity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(pantallacarga.this, MainActivity.class);
+                Intent intent = new Intent(pantallacarga.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -12,21 +12,25 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 
-public class fragcomunidad extends Fragment {
+public class fragcomunidad_alumno extends Fragment {
     View vista;
-    Button btnComunidad;
+    Button btnComunidad_alumno;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        vista = inflater.inflate(R.layout.fragment_fragcomunidad_alumno, container, false);
+        btnComunidad_alumno = (Button) vista.findViewById(R.id.btn_ini_comunidad_alumno);
 
-        btnComunidad = (Button) vista.findViewById(R.id.btn_ini_comunidad);
-        btnComunidad.setOnClickListener(new View.OnClickListener() {
+        btnComunidad_alumno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(getActivity(),
+                        curso.class);
+                getActivity().startActivity(i);
             }
         });
-                vista = inflater.inflate(R.layout.fragment_fragcomunidad, container, false);
+
         return vista;
     }
 
@@ -34,4 +38,4 @@ public class fragcomunidad extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-    }
+}

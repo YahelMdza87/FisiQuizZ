@@ -1,6 +1,8 @@
 package com.example.fisiquiz;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 
 public class Crear_contrarreloj extends AppCompatActivity {
-    EditText etx_nombreExamen,etx_pregunta,etx_opcion1,etx_opcion2,etx_opcion3,etx_respuestaCorrecta,etx_cantidadTiempo;
+    EditText etx_pregunta,etx_opcion1,etx_opcion2,etx_opcion3,etx_respuestaCorrecta,etx_cantidadTiempo;
     Button btn_agregar,btn_finalizar;
     private int total;
     private List<Pregunta> ListaPreguntas;
@@ -33,16 +35,75 @@ public class Crear_contrarreloj extends AppCompatActivity {
         ListaPreguntas = contrarrelojDbHelper.getAllPreguntas();
         total = ListaPreguntas.size();
         btn_finalizar = (Button) findViewById(R.id.btn_finalizar_contrarreloj);
-
-
+        btn_finalizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), curso.class);
+                startActivity(i);
+                finish();
+            }
+        });
         btn_agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 total++;
-                contrarrelojDbHelper.addPregunta(total,etx_pregunta.getText().toString(),etx_opcion1.getText().toString(),etx_opcion2.getText().toString(),etx_opcion3.getText().toString(),etx_cantidadTiempo.getText().toString(),etx_respuestaCorrecta.getText().toString());
-                Toast.makeText(getApplicationContext(), "SE AGREGO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
+                checarDatos();
+
             }
         });
+    }
+    public void checarDatos(){
+        final String pregunta=etx_pregunta.getText().toString();
+        final String opcion1=etx_opcion1.getText().toString();
+        final String opcion2=etx_opcion2.getText().toString();
+        final String opcion3=etx_opcion3.getText().toString();
+        final String cantidadTiempo=etx_cantidadTiempo.getText().toString();
+        final String respuestaCorrecta=etx_respuestaCorrecta.getText().toString();
+        if (TextUtils.isEmpty(pregunta)){
+            etx_pregunta.setError("Error, no se puede dejar vacio");
+        }
+        else if (TextUtils.isEmpty(opcion1)){
+            etx_opcion1.setError("Error, no se puede dejar vacio");
+        }
+        else if (TextUtils.isEmpty(opcion2)){
+            etx_opcion2.setError("Error, no se puede dejar vacio");
+        }
+        else if (TextUtils.isEmpty(opcion3)){
+            etx_opcion3.setError("Error, no se puede dejar vacio");
+        }
+        else if (TextUtils.isEmpty(cantidadTiempo)){
+            etx_cantidadTiempo.setError("Error, no se puede dejar vacio");
+        }
+        else if (TextUtils.isEmpty(respuestaCorrecta)){
+            etx_respuestaCorrecta.setError("Error, no se puede dejar vacio");
+        }
+        else {
+            agregarDatos();
+        }
+
+    }
+    public void agregarDatos(){
+        final String pregunta=etx_pregunta.getText().toString();
+        final String opcion1=etx_opcion1.getText().toString();
+        final String opcion2=etx_opcion2.getText().toString();
+        final String opcion3=etx_opcion3.getText().toString();
+        final String cantidadTiempo=etx_cantidadTiempo.getText().toString();
+        final String respuestaCorrecta=etx_respuestaCorrecta.getText().toString();
+//        String id = Crear_contrarreloj.push().getKey();
+//        Crear_contrarreloj Examen = new Crear_contrarreloj(id,pregunta,opcion1,opcion2,opcion3,cantidadTiempo,respuestaCorrecta);
+//        Crear_contrarreloj.child("Examen").child(id).setValue(Examen);
+        //Esto es para cuando se agregue correctamente
+        Toast.makeText(Crear_contrarreloj.this, "Se ha agregado correctamente", Toast.LENGTH_SHORT).show();
+        limpiar();
+
+    }
+    public void limpiar(){
+        etx_pregunta.setText("");
+        etx_opcion1.setText("");
+        etx_opcion2.setText("");
+        etx_opcion3.setText("");
+        etx_cantidadTiempo.setText("");
+        etx_respuestaCorrecta.setText("");
     }
 
 }

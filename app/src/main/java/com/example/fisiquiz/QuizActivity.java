@@ -80,9 +80,9 @@ public class QuizActivity extends AppCompatActivity {
     public void siguientePregunta(){
         etx_respuesta.setTextColor(colorRespuesta);
         etx_respuesta.setText("");
+        String pregun = getIntent().getStringExtra("pregunta");
         if (numPregunta<numPreguntaTotal){
-            preguntaQuiz = ListaPreguntasQuiz.get(numPregunta);
-            txtv_pregunta_quiz.setText(preguntaQuiz.getPreguntaquiz());
+            txtv_pregunta_quiz.setText(pregun);
             numPregunta++;
             txtv_cant_preguntas_quiz.setText(numPregunta+" / "+numPreguntaTotal);
             respuesta=false;
@@ -93,10 +93,10 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
     public void checarRespuestaQuiz(){
+        String respues = getIntent().getStringExtra("respuesta");
         respuesta=true;
         String respuestaQuiz = etx_respuesta.getText().toString();
-        final String respuestaCorrecta= preguntaQuiz.getRespuesta();
-        if (respuestaQuiz.equals(respuestaCorrecta)){
+        if (respuestaQuiz.equals(respues)){
             bien=true;
             correctas++;
             txtv_acertadas_quiz.setText("Correctas: "+correctas);
@@ -107,7 +107,7 @@ public class QuizActivity extends AppCompatActivity {
         }
         mostrarRespuesta();
         System.out.println("-----------------------"+bien);
-        System.out.println("---------------------"+respuestaCorrecta+"--------------"+respuestaQuiz);
+        System.out.println("---------------------"+respues+"--------------"+respuestaQuiz);
 
     }
     public void mostrarRespuesta(){

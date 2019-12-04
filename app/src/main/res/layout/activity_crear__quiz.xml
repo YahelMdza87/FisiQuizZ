@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Crear_Quiz">
+    <TextView
+        android:id="@+id/txtv_tit_crear_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREA UN QUIZ"
+        android:textColor="#110000"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        />
 
-</androidx.constraintlayout.ConstraintLayout>
+    <TextView
+        android:textColor="#110000"
+        android:id="@+id/txtv_pregunta_quiz_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta"
+        android:layout_below="@+id/txtv_tit_crear_quiz"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+
+        android:id="@+id/etx_pregunta_quiz"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtv_pregunta_quiz_crear"
+        />
+    <TextView
+        android:textColor="#110000"
+        android:id="@+id/txtv_respuesta_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respuesta"
+        android:layout_below="@+id/etx_pregunta_quiz"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/etx_respuesta_crear_quiz"
+        android:layout_width="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_respuesta_crear"
+        android:hint="Respuesta"
+        />
+    <Button
+        android:background="@drawable/button_border"
+        android:id="@+id/btn_finalizar_quiz"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="#110000"
+        android:layout_marginBottom="60dp"
+        android:text="Finalizar quiz"
+        />
+
+    <Button
+        android:background="@drawable/button_border"
+        android:textColor="#110000"
+        android:id="@+id/btn_agregar_pregunta_quiz"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etx_respuesta_crear_quiz"
+        android:layout_marginTop="10dp"
+        android:text="Agregar Pregunta"
+        />
+</RelativeLayout>

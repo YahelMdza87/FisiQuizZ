@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity_profe"
+    tools:showIn="@layout/app_bar_main_activity_profe">
+
+    <TextView
+        android:id="@+id/txtv_pantallaP_tit_profe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="INTEGRANTES!"
+        android:textColor="#110000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_pantallaP_tit_profe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Yahel Adrián Mendoza Gutiérrez \n\nEdwin Hiram Varela Rubio \n\nGustavo Adolfo Valladolid Tarango\n\nFabian Eduardo Escolar Galarza"
+        android:textColor="#110000"
+        android:textSize="24sp" />
+
+</RelativeLayout>
