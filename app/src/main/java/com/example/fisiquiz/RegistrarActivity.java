@@ -54,7 +54,6 @@ public class RegistrarActivity extends AppCompatActivity {
         grupo = (RadioGroup) findViewById(R.id.radioGroupReg);
 
         mAuth=FirebaseAuth.getInstance();
-        mUser= FirebaseDatabase.getInstance().getReference();
 
 
         //Asignar que tipo de usuario es
@@ -70,6 +69,7 @@ public class RegistrarActivity extends AppCompatActivity {
                 }
                 if (rbAlum.isChecked()==true){
                     Usuario="Alumno";
+                    tipoDeUsuario(Usuario);
                 }
                 System.out.println("////////"+Usuario);
                 email=edtCorreo.getText().toString();
@@ -83,9 +83,9 @@ public class RegistrarActivity extends AppCompatActivity {
                 if (password.equals(confPass)){
 
 
-                if (!email.isEmpty() && !password.isEmpty() && !apellido.isEmpty() && !nombre.isEmpty() && !Usuario.isEmpty()){
-                   registerUser();
-                }
+                    if (!email.isEmpty() && !password.isEmpty() && !apellido.isEmpty() && !nombre.isEmpty() && !Usuario.isEmpty()){
+                        registerUser();
+                    }
 
 
 
@@ -101,31 +101,44 @@ public class RegistrarActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
                         if(task.isSuccessful()){
-
-                            Map<String, Object> map=new HashMap<>();
-                            map.put("nombre",nombre);
-                            map.put("apellido",apellido);
-                            map.put ("tipo",Usuario);
-                            mUser.child("Usuarios").child(email).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task2) {
-                                    if (task2.isSuccessful() && Usuario.equals("Alumno")){
-                                        startActivity(new Intent(RegistrarActivity.this, MainActivity.class));
-                                    }
-                                    else if (task2.isSuccessful() && Usuario.equals("Profesor")){
-                                        startActivity(new Intent(RegistrarActivity.this, MainActivity_profe.class));
-                                    }
-                                }
-                            });
-                        }else{
+                            tipoDeUsuario(Usuario);
+                            }
+                            else{
                             if (task.getException() instanceof FirebaseAuthUserCollisionException){ //Si ya está registrado el meco
                                 Toast.makeText(RegistrarActivity.this,"Este usuario ya existe",Toast.LENGTH_LONG).show();
                             }
-                            else {
-                                Toast.makeText(RegistrarActivity.this,"No se pudo registrar el usuario. Verifica tus datos ", Toast.LENGTH_LONG).show();
-                            }
                         }
-                    }
+
+                        }
+
                 });
+    }
+    private void tipoDeUsuario(final String User){
+
+        mUser= FirebaseDatabase.getInstance().getReference();
+        Usuario=User;
+
+            System.out.println("////////"+User);
+            String[] emailWhitout=email.split("@");
+
+
+        Map<String, Object> map=new HashMap<>();
+        map.put("nombre",nombre);
+        map.put("apellido",apellido);
+        map.put ("tipo",User);
+        mUser.child("Usuarios").child(emailWhitout[0]).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task2) {
+                if (task2.isSuccessful() && User.equals("Alumno")){
+                    startActivity(new Intent(RegistrarActivity.this, MainActivity.class));
+                }
+                else if (task2.isSuccessful() && User.equals("Profesor")){
+                    startActivity(new Intent(RegistrarActivity.this, MainActivity_profe.class));
+                }
+                else {
+                    Toast.makeText(RegistrarActivity.this,"No se pudo registrar el usuario. Verifica tus datos ", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }

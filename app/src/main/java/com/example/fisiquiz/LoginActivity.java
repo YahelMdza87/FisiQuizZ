@@ -87,32 +87,7 @@ private Button btnLogin,btnRegistrar;
                 public void onComplete(@NonNull Task<AuthResult> task) {
 
                     if (task.isSuccessful()){
-
-                        mUser.child("Usuarios").child(email).child("tipo").addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                                String tipo=dataSnapshot.getValue().toString();
-
-                                if ( dataSnapshot.exists()){
-                                    if (tipo.equals("Alumno")){
-                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                                    }
-                                    else if (tipo.equals("Profesor")){
-                                        startActivity(new Intent(LoginActivity.this, MainActivity_profe.class));
-                                    }
-                                }
-                                else {
-                                    Toast.makeText(LoginActivity.this, "Tu usuario no existe", Toast.LENGTH_SHORT).show();
-                                }
-
-                            }
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError databaseError) {
-                                startActivity(new Intent(LoginActivity.this, RegistrarActivity.class));
-
-                            }
-                        });
+                        tipoDeUsuario();
                     }
 
                     else {
@@ -128,5 +103,33 @@ private Button btnLogin,btnRegistrar;
         }
         //Extraer datos
 
+    }
+    private void tipoDeUsuario(){
+        String[] emailWhitout=email.split("@");
+        mUser.child("Usuarios").child(emailWhitout[0]).child("tipo").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                String tipo=dataSnapshot.getValue().toString();
+
+                if ( dataSnapshot.exists()){
+                    if (tipo.equals("Alumno")){
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    }
+                    else if (tipo.equals("Profesor")){
+                        startActivity(new Intent(LoginActivity.this, MainActivity_profe.class));
+                    }
+                }
+                else {
+                    Toast.makeText(LoginActivity.this, "Tu usuario no existe", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                startActivity(new Intent(LoginActivity.this, RegistrarActivity.class));
+
+            }
+        });
     }
         }
